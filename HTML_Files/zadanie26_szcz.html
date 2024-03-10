@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table thead tbody tr td {
+                border: 1px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li>
+                <h1>Cel stosowania szablonów HTML 4.01 Transitional</h1>
+                <font face="Arial">
+                    Zanim walidator sprawdzi dokument, musi wiedzieć w jakim języku został napisany. Istnieje kilka typów HTML (język znaczników). <br>
+                    Aby powiedzieć przeglądarce jakiego języka znaczników używamy, precyzujemy deklaracje typu dokumentu (DocType) na samym początku kodu HTML, czyli przed znacznikiem < html>. Podanie adresu wersji DTD, pozwala przeglądarce pobrać wersję DTD oraz wszystkie potrzebne zestawy znaków. <br>
+                </font>
+            </li>
+
+            <li>
+                <h1>Opis</h1>
+                <font face="Arial">
+                   <ul>
+                        <li><b>"Strict" -> (ścisła)</b> - zawiera wszystkie elementy i atrybuty, które nie są zdeprecjonowane (nie deprecated) oraz nie pojawiają się w dokumentach z ramkami (ponadto nie obejmuje elementu IFRAME ani atrybutu target="...") </li>
+                        <li><b>"Transitional" -> (przejściowa) lub inaczej loose DTD ("luźna")</b> - zawiera wszystko co w Strict DTD plus elementy i atrybuty zdeprecjonowane oraz element IFRAME i atrybut target="..." </li>
+                        <li><b>"Frame Set" -> (dla ramek-ramkowa)</b> - zawiera wszystko co w Transitional DTD plus elementy odnoszące się do ramek: FRAME, FRAMESET oraz NOFRAMES (używane na stronach startowych ramek) </li>
+                   </ul> 
+                </font>
+            </li>
+            
+            <li>
+                <h1>
+                    Przykłady szablonów HTML 4.01 Transitional<br>
+                    -w tabeli<br>
+                    -wytłumaczenie<br>
+                    -dokładny opis
+                </h1>
+                <font face="Arial">
+                    <table border="1" style="border-collapse: collapse; text-align: center;" width="95%">
+                        <thead>
+                            <tr>
+                                <td>Szablon</td>
+                                <td>Przykład</td>
+                                <td>Opis</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Strict</td>
+                                <td>
+                                    <textarea rows="1" cols="65" readonly style="overflow:hidden">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    <b>"Strict" -> (ścisła)</b> - zawiera wszystkie elementy i atrybuty, które nie są zdeprecjonowane (nie deprecated) oraz nie pojawiają się w dokumentach z ramkami (ponadto nie obejmuje elementu IFRAME ani atrybutu target="...")
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Transitional</td>
+                                <td>
+                                    <textarea rows="1" cols="65" readonly style="overflow:hidden">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    <b>"Transitional" -> (przejściowa) lub inaczej loose DTD ("luźna")</b> - zawiera wszystko co w Strict DTD plus elementy i atrybuty zdeprecjonowane oraz element IFRAME i atrybut target="..."
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Frame Set</td>
+                                <td>
+                                    <textarea rows="1" cols="65" readonly style="overflow:hidden">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+                                    </textarea>
+                                </td>
+                                <td>
+                                    <b>"Frame Set" -> (dla ramek-ramkowa)</b> - zawiera wszystko co w Transitional DTD plus elementy odnoszące się do ramek: FRAME, FRAMESET oraz NOFRAMES (używane na stronach startowych ramek)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </font>
+            </li>
+            
+            <li>
+                <h1>Wartości domyślne</h1>
+                <font face="Arial">
+                    Jeśli nie podamy żadnej z powyższych wersji DTD, jako domyślna najprawdopodobniej zostanie przyjęta Transitional DTD (w MSIE), ale sposób ten absolutnie nie jest zalecany! <br>
+                    W każdym dokumencie HTML, na samym początku, powinna się pojawić deklaracja DTD. <br>
+                    Najbezpieczniejszym rozwiązaniem, kiedy kluczowe znaczenie ma kompatybilność wstecz, wydaje się użycie Transitional DTD, chyba że chcemy się ściśle trzymać wytycznych specyfikacji co do znaczników i atrybutów zdeprecjonowanych, wtedy należy zastosować Strict DTD i nie używać tych znaczników ani atrybutów. <br>
+                </font>
+            </li>
+        </ol>
+    </body>
+</html>

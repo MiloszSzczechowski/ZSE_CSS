@@ -1,0 +1,77 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Style wewnętrzne</title>
+        <style>
+            table thead tbody tr td {
+                border: 3px solid;
+                border-color: greenyellow;
+            }
+
+            .table {
+                background-color: yellow;
+                color: purple;
+            }
+        </style>
+    </head>
+    <body style="background: rgb(170,100,110); text-align: center; margin: 70px;">
+        <div style="background: rgb(100,128,220); width: 400px; border: 5px black solid;">
+            <h1 style="margin: 20px; border: 1px solid black; background:rgb(255,255,100);">
+                Ucz się CSS
+            </h1>
+        </div>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <div class="table">
+            <table border="3px" style="border-collapse: collapse; text-align: center;" width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <textarea rows="1" cols="65" readonly style="overflow:hidden">
+    <BODY style="background: rgb(170,100,110); text-align: center; margin: 70px;">
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Znacznik body posiada styl o kolorze tła jako mieszanina kolorów 170, 100, 110, tekst wyrównany, margines 70 pikseli
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <textarea rows="1" cols="65" readonly style="overflow:hidden">
+<DIV style="background: rgb(100,128,220); width: 400px; border: 5px black solid;">
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Znacznik DIV posiada styl o kolorze tła jako mieszanina kolorów 100, 128, 220, szerkość 400 pixeli, granice o grubości 5px koloru czarnego
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <textarea rows="1" cols="65" readonly style="overflow:hidden">
+<H1 style="margin: 20px; border: 1px solid black; background: rgb(255,255,100);">
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Znacznik H1 posiada styl o kolorze tła jako miesznina kolorów 255, 255, 100, marginesie 20px, granicach o grubości 1px koloru czarnego
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
