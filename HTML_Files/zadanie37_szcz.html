@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table thead tbody tr td {
+                border: 1px solid;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li>
+                <h1>zapisz zastosowanie i składnię selektora potomka(szukaj poniżej).</h1>
+                <font face="Arial">
+                    Selektor potomka pozwala nadać atrybuty elementom, które leżą niżej w hierarchii drzewa<br>
+                    dokumentu (zawierają się w innych zewnętrznych znacznikach). Dzięki temu możemy<br>
+                    zmienić typ formatowania tylko dla określonych elementów, które są podrzędne w stosunku<br>
+                    do innych (przodków). Potomek nie musi leżeć bezpośrednio wewnątrz znacznika przodka.<br>
+                    Może być zawarty jeszcze w innych znacznikach, które z kolei zawierają się w rodzicu. Nie<br>
+                    jest wtedy konieczne podawanie w deklaracji wszystkich rodziców, a jedynie przodka i<br>
+                    potomka.<br><br>
+                    Selektor taki jest szczególnie przydatny, dla określenia wyglądu odsyłaczy wewnątrz bloku,<br>
+                    ponieważ jeśli nie określimy dla nich tzw. pseudoklas odsyłaczowych, nie odziedziczą one<br>
+                    formatowania po przodkach.<br>
+                </font>
+            </li>
+
+            <li>
+                <h1>do formatowania jakich elementów służy</h1>
+                <font face="Arial">
+                    Przy użyciu selektora potomka można formatować elementy, które sa zawarte wewnątrz innych znaczników, czyli leżą niżej w hierarchii drzewa dokumentu.
+                </font>
+            </li>
+
+            <li>
+                <h1>składnia teoretyczna (w ramce)</h1>
+                <font face="Arial">
+                    <table border="1">
+                        <tbody>
+                            <th>
+                                przodek1 przodek2 ... potomek { cecha: wartość }
+                            </th>
+                        </tbody>
+                    </table>
+                </font>
+            </li>
+
+            <li>
+                <h1>opis przodek, potomek, cecha, wartość</h1>
+                <font face="Arial">
+                    "przodek1, przodek2,..." oraz "potomek" (wielokropek należy pominąć!) są selektorami<br>
+                    typu, przy czym przodek leży wyżej w hierarchii drzewa dokumentu<br>
+                    Natomiast wyrazy "cecha" oraz "wartość" określają atrybuty elementu<br>
+                </font>
+            </li>
+        </ol>
+    </body>
+</html>
