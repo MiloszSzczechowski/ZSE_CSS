@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p>span {
+            font-style: italic;
+            text-decoration: underline;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Dowolny tekst, w którym widać efekt działania <span>selektora dziecka</span>.</p>
+    <span>Tekst zamknięty wewnątrz znacznika span, który nie jest formatowany za pomocą selektora dziecka.</span>
+
+    <p>
+        Działanie →definicji stylu opis:<br>
+        Dany styl zadziała w przypadku, gdy wewnątrz bloku tekstu zostanie umieszczony znacznik
+        < span></ span>.<br>
+        Realizacja:
+    <table border="1">
+        <tbody>
+            <th>
+                < p>Dowolny tekst, w którym widać efekt działania < span>selektora dziecka</ span>.</ p>
+                < span>Tekst zamknięty wewnątrz znacznika span, który nie jest formatowany za pomocą
+                    selektora dziecka.</ span>
+            </th>
+        </tbody>
+    </table>
+    Działanie →opis tekstu w ramce powyżej:<br>
+    < span></ span> jest „dzieckiem”<br>
+    < p></ p> jest „rodzicem”<br>
+    pierwsza linia<br>
+    formatowaniu zostanie poddany tylko tekst znajdujący się wewnątrz znacznika<br>
+    < span></ span>, który z kolei ograniczony jest przez<br>
+    < p></ p>,
+    druga linia<br>
+    natomiast inne elementy, które nie są „dziećmi” <p></p>, pomimo że również zamknięte są<br>
+    w < span></ span>, pozostaną bez zmian.<br>
+    </p>
+</body>
+
+</html>
