@@ -1,0 +1,57 @@
+
+/* First paragraph */
+
+p:first-of-type::first-letter {
+    font-size: 113pt;
+    color: yellow;
+}
+p:first-of-type {
+    font-size: 21pt;
+}
+
+/* Second paragraph */
+
+p:nth-of-type(2)::first-letter {
+    font-size: 113pt;
+    color: yellow;
+}
+
+p:nth-of-type(2) {
+    font-size: 25pt;
+}
+
+/* Third paragraph */
+
+p:nth-of-type(3)::first-letter {
+    color: red;
+    font-size: 55pt;
+}
+
+p:nth-of-type(3)::first-line {
+    color: red;
+    font-size: 15pt;
+}
+
+p:nth-of-type(3) {
+    color: purple;
+    font-size: 25pt;
+}
+
+/* All paragraphs */
+
+p {
+    color: silver;
+}
+
+
+/* Header */
+
+h1::first-letter {
+    color: silver;
+    font-size: 113pt;
+}
+
+h1 {
+    color: purple;
+}
+
