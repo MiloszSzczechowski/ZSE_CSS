@@ -1,0 +1,75 @@
+/* akapit 1*/
+.a1_szczechowski
+{   
+    text-align: center;
+    font-family: serif;
+    color: #ADFF2F;
+    text-indent: 2cm;
+    line-height: 1cm;
+    word-spacing: 12px;
+    letter-spacing: 5ex;
+}
+
+.a1_szczechowski.z1_szczechowski
+{
+    color: #7FFF00;
+    font-weight: 200;
+    font-size: x-small;
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+
+.a1_szczechowski.z2_szczechowski
+{
+    color: #7CFF00;
+    font-weight: 700;
+    font-size: medium;
+    font-style: italic;
+}
+
+.a1_szczechowski.z3_szczechowski
+{
+    color: #00FF00;
+    font-weight: 900;
+    font-size: large;
+    font-variant: small-caps;
+}
+
+
+
+/* akapit 2*/
+.a2_szczechowski
+{   
+    text-align: right;
+    font-family: sans-serif;
+    color: #8B4513;
+    text-indent: 25mm;
+    line-height: 15mm;
+    word-spacing: 1pt;
+    letter-spacing: 0.5cm   ;
+}
+
+.a2_szczechowski.z1_szczechowski
+{
+    color: #A0522D;
+    font-weight: 300;
+    font-size: 9px;
+    text-decoration: line-through;
+    text-transform: capitalize;
+}
+
+.a2_szczechowski.z2_szczechowski
+{
+    color: #A52A2A;
+    font-weight: 600;
+    font-size: 10px;
+    font-style: oblique;
+}
+
+.a2_szczechowski.z3_szczechowski
+{
+    color: #800000;
+    font-weight: 800;
+    font-size: 11px;
+    font-variant: small-caps;
+}

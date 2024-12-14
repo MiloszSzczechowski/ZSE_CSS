@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table thead tbody tr td {
+                border: 1px solid;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li>
+                <h1>Co to są pseudoklasyk?</h1>
+                <font face="Arial">
+                    CSS przewiduje kilka ściśle określonych klas pozwalających na formatowanie niektórych elementów dokumentu są to Pseudoklasy.
+                </font>
+            </li>
+
+            <li>
+                <h1>Uwaga dotycząca dwukropka :</h1>
+                <font face="Arial">
+                    Szalenie istotnym elementem w tej konstrukcji jest dwukropek występujący pomiędzy selektorem a nazwą klasy.
+                </font>
+            </li>
+            
+            <li>
+                <h1>Tabela(wykonana w htmlu) opisującą pseudoklasy.</h1>
+                <font face="Arial">
+                    <table border="1">
+                        <tbody>
+                            <th>
+                                <tr>
+                                    A:link
+                                </tr>
+                                <tr>
+                                    odpowiada za wygląd hiperłącza, jeżeli nie zostało ono jeszcze odwiedzone.
+                                </tr>
+                            </th>
+
+                            <th>
+                                <tr>
+                                    A:visited
+                                </tr>
+                                <tr>
+                                    odpowiada za formatowanie hiperłącza już odwiedzonego.
+                                </tr>
+                            </th>
+
+                            <th>
+                                <tr>
+                                    A:hover
+                                </tr>
+                                <tr>
+                                    zmiany pewnych elementów po najechaniu na nie urządzeniem wskazującym (np. myszą), np. odsyłacz, nad którym zatrzymano kusor lub element blokowy DIV.
+                                </tr>
+                            </th>
+
+                            <th>
+                                <tr>
+                                    A:active
+                                </tr>
+                                <tr>
+                                    pozwala nadać dowolne formatowanie elementowi po nakierowaniu na niego wskaźnika myszy i wciśnięciu przycisku, ale przed jego zwolnieniem (odsyłacz aktywny→kliknięty).
+                                </tr>
+                            </th>
+
+                            <th>
+                                <tr>
+                                    A:focus
+                                </tr>
+                                <tr>
+                                    jeżeli chcemy, by właśnie wyświetlany odsyłacz z menu był formatowany innym kolorem. Odsyłacz posiadający tzw fokus- zaznaczony przy poruszaniu się po dokumencie przy pomocy klawisza tabulacji: naciśnięcie w tym momencie klawisza ENTER spowoduje taką reakcję przeglądarki, jakby dany odsyłacz został kliknięty.
+                                </tr>
+                            </th>
+
+                            <th>
+                                <tr>
+                                    :lang
+                                </tr>
+                                <tr>
+                                    ormatowanie wielojęzykowych dokumentów.
+                                </tr>
+                            </th>
+
+                            <th>
+                                <tr>
+                                    :first-child
+                                </tr>
+                                <tr>
+                                    umożliwia określenie formatowania dla pierwszego dziecka wybranego elementu.
+                                </tr>
+                            </th>
+                        </tbody>
+                    </table>
+                </font>
+            </li>
+
+            <li>
+                <h1>Zastosowanie pseudoklasy :active</h1>
+                <font face="Arial">
+                    1)można używać jako uzupełnienia definicji odnośników
+                    2)jako elementu poprawiającego czytelność formularzy.
+                </font>
+            </li>
+
+            <li>
+                <h1>Przykłady (trzy) kodów definiowania pseudoklas (wraz z tematem)</h1>
+                <font face="Arial">
+                    <textarea>
+Przykład
+Temat: Arkusz wykorzystujący :link oraz :visited pseudoklasy w połączeniu z selektorem
+A. Przykładowa definicja sformatuje odnośnik za pomocą koloru czerwonego i po wybraniu
+taki odnośnik będzie miał kolor zielony.
+A:link
+{
+color:red;
+}
+A:visited
+{
+color:green;
+}
+                    </textarea>
+
+                    <textarea>
+Przykład
+Temat: Formatowanie wyglądu wszystkich odnośników w dokumencie XHTML/HTML.
+A /* Definicja odsyłacza podstawowego*/
+{
+font-size:12pt;
+text-decoration:none;
+}
+A:link
+{
+color:navy;
+}
+A:visited
+{
+color:green;
+}
+A:hover
+{
+color:red;
+text-decoration:underline;
+}
+                    </textarea>
+
+                    <textarea>
+Przykład
+Temat: Zastosowanie :focus
+A:focus
+{
+color:braun;
+}
+                    </textarea>
+                </font>
+            </li>
+        </ol>
+    </body>
+</html>

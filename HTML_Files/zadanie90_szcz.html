@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css"> /* początek def CSS */
+            * {
+                margin: 0px;
+                padding: 0px;
+            } /* zerowanie styli */
+
+            div {
+                overflow: hidden;
+                padding: 25px;
+            }
+
+            /* overflow: hidden --> ????????????????? */
+            /* padding: 25px; --> ??????????????????*/
+            #ramka { /* definicja elementu ID o nazwie ramka*/
+                margin-right: auto; /* auto -->??????? */
+                margin-left: auto;
+                min-width: 400px; /* minimalna szer strony-->?? */
+                max-width: 900px; /* maksymalna szer strony-->?? */
+            }
+
+            #naglowek {
+                background-color: #ADFF2F;
+                /* kolor tła w HEX na #FCF; */
+                font-size:16pt;
+                /* wielkość czcionki na 16 na jaka tu jest jednostka-wpisz */
+                color:red;
+                /* ????????????? */
+                font-family: Arial;
+                /* ????????????? */
+                font-style: italic;
+                /* ????????????? */
+                text-align: center;
+                /* ????????????? */
+                font-weight:bold;
+                /* ????????????? */
+            }
+
+            #stopka {
+                background-color: #00FF00;
+                font-size:16pt;
+                color:blue;
+                font-family: Arial;
+                font-style: italic;
+                clear:both;
+                /* clear-przyleganie elementów, both-?????????????? */
+            }
+
+            .kolumny {/*definicja elementu ???? (jest kropka i co to znaczy)*/
+                margin-top: 10px; /* ????????????? */
+                margin-right: 2%; /* ????????????? */
+                margin-bottom: 2%; /* ????????????? */
+                margin-left: 10px; /* ????????????? */
+                background-color: #c0c0c0;
+            }
+
+            #kol1 {
+                background-color: #7CFC00;
+                float: left; /* ?????????????? */
+                width:100px;
+            }
+
+            #kol2 {
+                background-color: #7FFF00;
+                font-size: 0.7cm;
+                color: green;
+            }
+
+            #menu_prawe_szczechowski {
+                background-color: #7FFF00;
+                font-size: 0.5cm;
+                color: red;
+            }
+            /* ?????????????? */
+        </style>
+    </head>
+    <body>
+        <div id="ramka">
+            <div id="naglowek">Nagłówek mojej strony </div>
+
+            <div class="kolumny" id="kol1">
+                <p>
+                    Menu
+                </p>
+            </div>
+
+            <div class="kolumny" id="kol2">
+                <p>
+                    Treść:
+                    Szablon pływający (płynny szablon) Przy zmianie szerokości okna przeglądarki zmieniać się będzie szerokość kolumn. Najczęściej zmiana szerokości dotyczy tylko wybranych kolumn np. kolumna menu pozostaje niezmienona, pozostałe kolumny zmieniaja się płynnie w stosunku do szerokości okna.
+                </p>
+                <img src="../Other_Files/Szczechowski_100procent_skalowana.png">
+                <img src="../Other_Files/Szczechowski_50procent_skalowana.png">
+            </div>
+
+            <div class="kolumny" id="menu_prawe_szczechowski">
+                <p>
+                    Szczechowski
+                </p>
+            </div>
+
+            <div id="stopka">Pracę wykonał nieznany woluntariusz</div>
+        </div>
+    </body>
+</html>
+<!-- Miłosz Szczechowski -->

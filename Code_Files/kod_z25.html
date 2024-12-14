@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Zadanie 25 kod</title>
+    </head>
+    <body>
+        <h1>KOD HTML</h1><br>
+        <textarea rows="113" cols="120" readonly style="overflow:hidden">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS_Files/szcz_z25.css">
+        <title>Właściwości czcionek-Szczechowski</title>
+    </head>
+    <body>
+        <h1 style="color: red; font-size: 1cm;">Miłosz Szczechowski 1P Układ 1</h1>
+        <h2 style="color: blue;">Akapit 1 - centrowany</h2>
+
+        <hr>
+
+        <p>
+            Rodzina Czcionki: 1 -> serif <br>
+            Kolory Tekstu: Odcienie koloru zielonego <br>
+            Dekoracja Tekstu: 3 -> Nadkreślić <br>
+            Styl Czcionek: 2 -> Italic <br>
+            Wariant Czcionki: Kapitaliki, jedno zdanie w tekście <br>
+            Grubość Czcionek: <br>
+            <ul>
+                <li>200</li>
+                <li>700</li>
+                <li>900</li>
+            </ul>
+
+            Rozmiary Czcionek: <br>
+            <ul>
+                <li>x-small</li>
+                <li>medium</li>
+                <li>large</li>
+            </ul>
+
+            Transformacja Tekstu: Jedno zdanie w tekście ma być wyświetlane dużymi literami <br>
+            Wcięcia Tekstu: 2cm <br>
+            Odstępy: <br>
+            <ul>
+                <li>Pomiędzy Wierszami: 1cm</li>
+                <li>Pomiędzy Wyrazami: 12px</li>
+                <li>Pomiędzy Literami: 5ex</li>
+            </ul>
+        </p>
+
+        <hr>
+        <h2>Realizacja Akapitu 1</h2>
+        <hr>
+
+        <p class="a1_szczechowski">
+            <text class="a1_szczechowski z1_szczechowski">Information technology (IT) is a set of related fields that encompass computer systems, software, programming languages and data and information processing and storage.</text><br>
+            <text class="a1_szczechowski z2_szczechowski">IT forms part of information and communications technology (ICT).</text><br>
+            <text class="a1_szczechowski z3_szczechowski">An information technology system (IT system) is generally an information system, a communications system, or, more specifically speaking, a computer system — including all hardware, software, and peripheral equipment — operated by a limited group of IT users, and an IT project usually refers to the commissioning and implementation of an IT system.</text><br>
+        </p>
+
+        <hr>
+        <h2 style="color: blue;">Akapit 2 - do prawej</h2>
+        <hr>
+
+        <p>
+            Rodzina Czcionki: 2 -> sans-serif <br>
+            Kolory Tekstu: Odcienie koloru brązowego <br>
+            Dekoracja Tekstu: 2 -> Nadkreślić <br>
+            Styl Czcionek: 3 -> Oblique<br>
+            Wariant Czcionki: Kapitaliki, jedno zdanie w tekście<br>
+            Grubość Czcionek: <br>
+            <ul>
+                <li>300</li>
+                <li>600</li>
+                <li>800</li>
+            </ul>
+
+            Rozmiary Czcionek: <br>
+            <ul>
+                <li>Wybierz i wpisz sam ?? px</li>
+                <li>Wybierz i wpisz sam ?? px</li>
+                <li>Wybierz i wpisz sam ?? px</li>
+            </ul>
+
+            Transformacja Tekstu: Jedno zdanie w tekście ma być wyświetlane w taki sposób, aby każde nowe słowo zaczynało się z dużej litery <br>
+            Wcięcia Tekstu: 25mm    <br>
+            Odstępy: <br>
+            <ul>
+                <li>Pomiędzy Wierszami: 15mm</li>
+                <li>Pomiędzy Wyrazami: 10pt</li>
+                <li>Pomiędzy Literami: 0.5cm</li> 
+            </ul>
+        </p>
+
+        <hr>
+        <h2>Realizacja Akapitu 2</h2>
+        <hr>
+
+        <p class="a2_szczechowski">
+            <text class="a2_szczechowski z1_szczechowski">Although humans have been storing, retrieving, manipulating, and communicating information since the earliest writing systems were developed, the term information technology in its modern sense first appeared in a 1958 article published in the Harvard Business Review; authors Harold J. Leavitt and Thomas L. Whisler commented that </text><br>
+            <text class="a2_szczechowski z2_szczechowski">"the new technology does not yet have a single established name. We shall call it information technology (IT)."</text><br>
+            <text class="a2_szczechowski z3_szczechowski">Their definition consists of three categories: techniques for processing, the application of statistical and mathematical methods to decision-making, and the simulation of higher-order thinking through computer programs.</text><br>
+        </p>
+    </body>
+</html>
+<!-- Miłosz Szczechowski -->
+        </textarea>
+        <h1>KOD CSS</h1><br>
+        <textarea rows="75" cols="120" readonly style="overflow:hidden">
+/* akapit 1*/
+.a1_szczechowski
+{   
+    text-align: center;
+    font-family: serif;
+    color: #ADFF2F;
+    text-indent: 2cm;
+    line-height: 1cm;
+    word-spacing: 12px;
+    letter-spacing: 5ex;
+}
+
+.a1_szczechowski.z1_szczechowski
+{
+    color: #7FFF00;
+    font-weight: 200;
+    font-size: x-small;
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+
+.a1_szczechowski.z2_szczechowski
+{
+    color: #7CFF00;
+    font-weight: 700;
+    font-size: medium;
+    font-style: italic;
+}
+
+.a1_szczechowski.z3_szczechowski
+{
+    color: #00FF00;
+    font-weight: 900;
+    font-size: large;
+    font-variant: small-caps;
+}
+
+
+
+/* akapit 2*/
+.a2_szczechowski
+{   
+    text-align: right;
+    font-family: sans-serif;
+    color: #8B4513;
+    text-indent: 25mm;
+    line-height: 15mm;
+    word-spacing: 1pt;
+    letter-spacing: 0.5cm   ;
+}
+
+.a2_szczechowski.z1_szczechowski
+{
+    color: #A0522D;
+    font-weight: 300;
+    font-size: 9px;
+    text-decoration: line-through;
+    text-transform: capitalize;
+}
+
+.a2_szczechowski.z2_szczechowski
+{
+    color: #A52A2A;
+    font-weight: 600;
+    font-size: 10px;
+    font-style: oblique;
+}
+
+.a2_szczechowski.z3_szczechowski
+{
+    color: #800000;
+    font-weight: 800;
+    font-size: 11px;
+    font-variant: small-caps;
+}
+        </textarea>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+h3 {
+    width: 250pt;
+    height: 3cm;
+    padding: 20px;
+    margin-left : 50%;
+    border: 10px dotted purple;
+    background : #DCDCDC;
+}

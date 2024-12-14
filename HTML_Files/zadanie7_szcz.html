@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Zadanie 7</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <ol>
+            <li>
+                <h1>Na co pozwala <b>styl lokalny</b>, który element będzie formatowany z użyciem stylu <br>
+                lokalnego,</h1>
+
+                <font face="Arial">
+                    Styl lokalny pozwala na nadanie formatowania konkretnemu pojedynczemu elementowi<br>
+                    strony. Jest wstawiany w tej samej linii, w której znajduje się element formatowany.<br>
+                    O tym, który to będzie element, decyduje słowo kluczowe "selektor".<br>
+                </font>
+            </li>
+            <li>
+                <h1>Składnia teoretyczna ( z użyciem ramki otaczającej -> może być tabela o jednej<br>
+                komórce, zastosuj „znaki specjalne” do napisania definicji stylu lokalnego tak aby<br>
+                instrukcja CSS nie wykonywała się a tylko wyświetlała wewnątrz ramki [& nbsp;<br>
+                spacja niełamana] <- przykład „znaku specjalnego”),</h1>
+
+                <font face="Arial">
+                    Składnia teoretyczna:
+                    <textarea rows="1" cols="120" readonly style="overflow:hidden">
+<selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor>
+                    </textarea>
+                    lub inaczej
+                    <textarea rows="1" cols="120" readonly style="overflow:hidden">
+<selektor style="nasze style">treść bloku</selektor>
+                    </textarea>
+                </font>
+            </li>
+            <li>
+                <h1>Co może być <b>selektorem,</b></h1>
+                <font face="Arial">
+                    Selektorem może być praktycznie dowolny znacznik, np. p (akapit), h1 (nagłówek), td<br>
+                    (komórka tabeli) i inne. To właśnie elementom znajdującym się pomiędzy tymi znacznikami,<br>
+                    nadajemy atrybuty formatowania.<br>
+                    Jako "cecha" czy inaczej własność bądź właściwość (ang. "property") należy wpisać o jakie<br>
+                    konkretnie atrybuty formatowania nam chodzi (np. kolor tekstu - color).<br>
+                    Jednemu selektorowi możemy nadać kilka atrybutów (cech). Są one wtedy rozdzielone<br>
+                    średnikami.<br>
+                    Jako wyraz "wartość" (w deklaracji stylu) wpisujemy dokładną wartość atrybutu (np. dla<br>
+                    koloru tekstu będzie to: red, blue czy też #31F4A5 itd.). Wartość zależy ściśle od cechy, po<br>
+                    której stoi w deklaracji.<br>
+                    Opis wszystkich cech później.<br>
+                    Przykład:
+                    <textarea  rows="1" cols="120" readonly style="overflow:hidden">
+    <p style="color: red">To jest kolor tekstu na czerwono</p>
+                    </textarea>
+                    Uwaga:<br>
+                    Styl wpisany jest wprowadzony w wybranym znaczniku i nie ma wpływu na pozostałe<br>
+                    znaczniki.
+                    <textarea  rows="15" cols="120" readonly style="overflow:hidden">
+<html>
+<head>
+    <title>styl wpisany</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- styl wpisany -->
+</head>
+<body bgcolor="red">
+    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 40px;">
+    styl wpisany wielkosc 40 pikseli</p>
+    <p>styl wpisany wielościa standardowa z użyciem znacznika -->p</p>
+    <span style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">
+    styl wpisany wielkosc 25 pikseli</span> <br>
+    <span>styl wpisany wielością standardową-->span</span>
+</body>
+</html>
+                    </textarea>
+                </font>
+            </li>
+            <li>
+                <h1>Co wipisujemy jako <b>"cechę"</b>. Jakie jest znaczenie średników,</h1>
+                <font face="Arial">
+                    Każda reguła odnosi się do konkretnego elementu (znacznika) i składa się z dwóch części:
+                    <ul type="disc">
+                        <li>selektora</li>
+                        <li>deklaracji.</li>
+                    </ul>
+                    <b>Selektor</b> określa do jakich elementów ma zostać przypisane formatowanie. np. p h1<br>
+                    <b>Deklaracja</b> jest umieszczona w nawiasie klamrowym {...} i podaje to formatowanie.<br>
+                    Każda deklaracja składa się z:<br>
+                    <ul type="disc">
+                        <li>przynajmniej z jednego zespołu <b>cecha</b> lub inaczej własność albo właściwość (ang. property)</li>
+                        <li><b>wartość</b> (ang. value), przy czym można podać dowolną liczbę, rozdzielając kolejne znakiem średnika (;).</li>
+                    </ul>
+                    <u>Średnik na końcu deklaracji nie jest konieczny.</u><br>
+                    Każda grupa elementów (znaczników np. <\body> <\p> <\b>) ma określony zespół cech CSS, które można jej przypisać.<br>
+                    Każda cecha ma ściśle wyszczególnioną listę wartości, które może przyjąć.<br>
+                    Na przykład: cecha text-align (wyrównanie tekstu) może być przypisana tylko i wyłącznie do elementów blokowych, ponieważ podanie jej dla elementów wyświetlanych w linii nie miałoby sensu. Z drugiej strony cecha ta może przyjmować tylko wartości takie jak: left, right, center, justify. Przypisanie do niej np. wartości koloru nie miałoby sensu.<br>
+                    <u>Przykład1:</u><br>
+                    <i>p { color: red; }</i><br>
+                    <u>selektorem</u> jest znacznik p,<br>
+                    <u>deklaracja</u> ma postać { color: red }.<br>
+                    <u>cechą</u> jest color,<br>
+                    <u>wartością</u> red.<br>
+                    <u>Przykład2:</u><br>
+                    <i>p b { color: red; background-color: yellow }</i><br>
+                    <u>Selektorem</u> jest zestawienie znaczników p b.<br>
+                    <u>Deklaracja</u> zawiera dwa zespoły cecha-wartość.<br>
+                </font>
+            </li>
+            <li>
+                <h1>Co wipisujemy jako <b>"wartość"</b> (w deklaracji stylu).</h1>
+                <font face="Arial">
+                    Jako wyraz <b>"wartość"</b> (w deklaracji stylu) wpisujemy dokładną wartość atrybutu (np. dla koloru tekstu będzie to: red, blue czy też #31F4A5 itd.). Wartość zależy ściśle od cechy, po której stoi w deklaracji. 
+                </font>
+            </li>
+        </ol>
+    </body>
+</html>

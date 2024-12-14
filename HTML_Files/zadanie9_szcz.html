@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zadanie 9</title>
+    </head>
+    <body>
+        <ol>
+            <li>
+                <h1>Składnia teoretyczna -> otoczony ramką (może być tabela jedno komórkowa, konieczne wcięcia).</h1>
+                <font face="Arial">
+                    Składnia teoretyczna:<br>
+                    <textarea rows="5" cols="120" readonly style="overflow:hidden">
+<head>
+(...)
+<link rel="Stylesheet" type="text/css" href="style.css" />
+(...)
+</head>
+                    </textarea>
+                    gdzie "<b>style.css</b>" jest zewnętrznym arkuszem stylów. Natomiast znaki (...) oznaczają inne polecenia, które zwykle pojawiają się w nagłówku dokumentu, np. deklaracja strony kodowej.
+                </font>
+            </li>
+            <li>
+                <h1>Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz ile razy może on występować w dokumencie, jako podłączenie stylu CSS?</h1>
+                <font face="Arial">
+                    Wstawienie -> wystarczy wpisać w treści nagłówkowej każdego z dokumentów (pomiędzy znacznikami < head> a < /head>), przedstawioną powyżej linijkę:
+                    <textarea rows="1" cols="120" readonly style="overflow:hidden">
+<link rel="Stylesheet" type="text/css" href="style.css" />
+                    </textarea>
+                </font>
+            </li>
+            <li>
+                <h1>Jak jest najprostsza forma wstawiania stylu zewnętrznego -> otoczony ramką (może być tabela jedno komórkowa?</h1>
+                <font face="Arial">
+                    <textarea  rows="1" cols="120" readonly style="overflow:hidden">
+<link rel="Stylesheet" type="text/css" href="style.css" />
+                    </textarea>
+                </font>
+            </li>
+            <li>
+                <h1>Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasad musi być zachowana przy większej ilości dołączanych styli?</h1>
+                <font face="Arial">
+                    Można dołączyć <b><u>dowolną liczbę</u></b> zewnętrznych arkuszy stylów - każdy jako osobny element < link rel="Stylesheet" />.<br>
+                    Znacznik LINK może znajdować się tylko i wyłącznie w nagłówku dokumentu. (sekcja <b>head</b>)<br>
+                </font>
+            </li>
+            <li>
+                <h1>Co się dzieje w przypadku konfliktów? Przez konflikt rozumiemy, gdy te same style są definiowane w różnych arkuszach styli podłączone do tego samego arkusza.</h1>
+                <font face="Arial">
+                    W przypadku <b><u>konfliktów</u></b>, ważniejsze będą deklaracje z arkusza dołączonego później.<br>
+                </font>
+            </li>
+            <li>
+                <h1>Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?</h1>
+                <font face="Arial">
+                    Zewnętrzny arkusz stylów jest on zwykłym plikiem tekstowym. Do tworzenia i edytowania wystarczy zwykły edytor tekst.<br>
+                </font>
+            </li>
+            <li>
+                <h1>Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?</h1>
+                <font face="Arial">
+                    Można się posłużyć specjalnym <b>edytorem CSS.</b><br>
+                </font>
+            </li>
+            <li>
+                <h1>Jakie rozszerzenie posiadają plik będący zewnętrznym arkuszem styli?</h1>
+                <font face="Arial">
+                    Plik będący zewnętrznym arkuszem stylów musi mieć rozszerzenie *<b>.css</b><br>
+                </font>
+            </li>
+            <li>
+                <h1>Jakie są zalety zewnętrznego arkusza styli( dwie – z użyciem wyliczenia?</h1>
+                <font face="Arial">
+                    <ol>
+                        <li>
+                            Wszystkie nasze strony w obrębie całego serwisu mogą mieć pewne wspólne cechy. 
+                        </li>
+                        <li>
+                            Jeśli w ostatniej chwili zdecydujemy się zmienić np. rodzaj czcionki na wszystkich stronach, możemy to zrobić, modyfikując jedynie zewnętrzny arkusz stylów, bez konieczności zmiany każdej strony osobno. 
+                        </li>
+                    </ol>
+                </font>
+            </li>
+            <li>
+                <h1>Uwagi na temat pisania w CSS.</h1>
+                <font face="Arial">
+                    <u>Uwaga1:</u><br>
+                    Język CSS dopuszcza stosowanie zarówno dużych, jak i małych liter.<br>
+                    Poprawnymi nazwami atrybutu są background, backGROUND oraz BACKground.<br>
+                    <u>Uwaga2:</u><br>
+                    Wstawienie białych znaków (spacje, tabulacje, znaki nowej linii) w arkuszu CSS nie ma wpływu na jego działanie.<br>
+                    <u>Uwaga3:</u><br>
+                    Dlatego możesz ułożyć wpisywane reguły CSS w taki sposób, aby były bardziej czytelne np.
+                    <table style="border:2px solid #000000;">
+                        <tbody style="border:2px solid #000000;">
+                            <tr>
+                                <td style="border:2px solid #000000;">
+                                    h1 {<br>
+                                        font-weight : bold;<br>
+                                    }<br>
+                                </td>
+                                <td style="border:2px solid #000000;">
+                                    możemy zapisać
+                                </td>
+                                <td style="border:2px solid #000000;">
+                                    h1{font-weight:bold;}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <u>Uwaga4:</u>
+                    <b>Komentarze w arkuszu stylów</b><br>
+                    pisze się używając znaków: /* (otworzenie komentarza) oraz */ (zamknięcie komentarza),<br>
+                    np.: /*to jest komentarz*/.<br>
+                    Wszystko pomiędzy tymi znakami jest ignorowane przez przeglądarkę.<br>
+                    <u>Uwaga5:</u><br>
+                    Część poleceń stylów CSS nie sa interpretowane przez niektóre przeglądarki internetowe lub jest obsługiwana odmiennie. Dlatego zawsze należy sprawdzać efekty w praktyce - jeśli to możliwe, to najlepiej w kilku najbardziej popularnych przeglądarkach: Microsoft Internet Explorer, Netscape/Mozilla/Firefox (czyli przeglądarki oparte na silniku Gecko), Opera. 
+                </font>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+div {
+    width: 624px;
+    background-color: green;
+    font-size: 18mm;
+}
+
+
+
+#blok1_szczechowski:hover {
+    background-color: yellow;
+}
+
+#blok2_szczechowski:hover {
+    background-color: yellow;
+}
+
+#blok3_szczechowski:hover {
+    background-color: silver;
+}

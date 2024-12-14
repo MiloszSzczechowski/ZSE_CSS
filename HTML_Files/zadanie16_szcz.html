@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <ol>
+            <li>
+                <h1>Opis znacznika DIV (jaki to element, składnia ->w ramce, zastosowanie, opis treotyczny, atrybuty-> tylko wymień, opisz tylko ALIGN).</h1>
+                <font face="Arial">
+                    <b>Znacznik < div></b><br>
+                    <textarea rows="1" cols="120" readonly style="overflow:hidden">
+<div style="cecha: wartość; cecha2: wartość2...">...</div>
+                    </textarea>
+                    <br>
+                    1. Element blokowy (DIV) jest elementem blokowym może zawierać wewnątrz siebie zwykły tekst, jak również inne elementy blokowe. Został on pomyślany do tworzenia obszerniejszych struktur.<br>
+                    2. Z div'a powinno się korzystać kiedy potrzebujemy wyodrębnić poszczególne bloki w układzie dokumentu, na przykład lewa kolumna, menu nawigacyjne, stopka.<br>
+                    3. Służy do utworzenia sekcji (bloku) w pliku HTML w celu ich sformatowania za pomocą arkusza stylów CSS.<br>
+                    4. DIV odgrywa istotną rolę w grupowaniu wielu różnych elementów i pozycjonowaniu fragmentów dokumentu.<br>
+
+                    <table style="border:1px solid; border-collapse: collapse;" width="75%">
+                        <tr style="border:1px solid; border-collapse: collapse;">
+                            <td>
+                                <b>ALIGN</b>="ustawienie"<br>
+                                Poziome ustawienie (wyrównanie) z uwzględnieniem otoczenia (zdeprecjonowane):<br>
+                                center - wyśrodkowanie<br>
+                                justify - wyrównanie do obu marginesów jednocześnie<br>
+                                left - wyrównanie do lewej<br>
+                                right - wyrównanie do prawej<br>
+                            </td>
+                        </tr>
+                        <tr style="border:1px solid; border-collapse: collapse;">
+                            <td><b>CLASS</b>="klasa"</td>
+                        </tr>
+                        <tr style="border:1px solid; border-collapse: collapse;">
+                            <td><b>DIR</b>="kierunek"</td>
+                        </tr>
+                        <tr style="border:1px solid; border-collapse: collapse;">
+                            <td><b>ID</b>="nazwa"</td>
+                        </tr>
+                        <tr style="border:1px solid; border-collapse: collapse;">
+                            <td><b>LANG</b>="język"</td>
+                        </tr>
+                        <tr style="border:1px solid; border-collapse: collapse;">
+                            <td><b>STYLE</b>="styl"</td>
+                        </tr>
+                        <tr style="border:1px solid; border-collapse: collapse;">
+                            <td><b>TITLE</b>="tekst"</td>
+                        </tr>
+                    </table>
+                </font>
+            </li>
+            <li>
+                <h1>Opis znacznika SPAN (jaki to element, składnia ->w ramce, zastosowanie, opis treotyczny).</h1>
+                <font face="Arial">
+                    <b>Znacznik < SPAN><br>
+                    <ol>
+                        <li><u>Elementy wyświetlanie w linii (SPAN)</u></b> jest elementem liniowym nie mogą zawierać elementów blokowych, ale mogą inne elementy wyświetlane w linii oraz zwykły tekst.</li>
+                        <li>Jeśli chcemy w paragrafie część tekstu wyróżnić czerwonym kolorem, do wyodrębnienia tego tekstu nie możemy użyć elementu div (paragraf < p> z zasady nie może zawierać elementów blokowych) tylko span.</li>
+                        <li>Wewnątrz DIV można oczywiście wpisać również SPAN.</li>
+                    </ol>
+                    <br>
+                    Składnia teoretyczna:<br><br>
+                    <textarea rows="1" cols="120" readonly style="overflow:hidden">
+<span style="cecha1: wartość1; cecha2: wartość2...">...</span>
+                    </textarea>
+                    Opis:
+                    Znacznik < span>...</ span> pozwala na objęcie pewnego większego fragmentu dokumentu. Pojedynczym znacznikiem <span>...</span> możemy objąć kilka różnych elementów, które są wyświetlane w linii (sam element SPAN tak właśnie jest wyświetlany), np. wytłuszczenie tekstu oraz kursywę. Element ten tak dobrze nadaje się do osadzania stylów, ponieważ sam w sobie nie ma określonego żadnego formatowania, które mogłoby kolidować z efektem, jaki chcemy uzyskać
+                </font>
+            </li>
+            <li>
+                <h1>Różnica między znacznikami DIV i SPAN.</h1>
+                <font face="Arial">
+                    <b>Różnica między znacznikami DIV i SPAN</b><br>
+                    Obydwa elementy służą jedynie do <u>wyodrębniania części struktury dokumentu</u>, aby docelowo na przykład poprzez arkusze styli osiągnąć zamierzony wygląd strony.<br>
+                    <b><u>Span'em</u></b> wyodrębniamy <b>elementy liniowe</b> (najczęściej fragmenty tekstu) a <b><u>divem</u> blokowe</b> (blokowe elementy, większe fragmenty struktury składające się na układ strony)<br>
+                    Dodatkowo DIV domyślnie jest wyświetlany w bloku. Natomiast SPAN w linii.<br>
+                </font>
+            </li>
+            <li>
+                <h1>Opisz oraz wymień elementy/tagi: 1)liniowe 2)blokowe 3)blokowo-liniowe.</h1>
+                <font face="Arial">
+                    <ol>
+                        <li>liniowe – < span>, < em>, < strong></li>
+                        <li>blokowe – < div>, < p>, < article></li>
+                        <li>liniowo-blokowe – < input>, < textarea></li>
+                    </ol>
+
+                    <b><u>Elementy liniowe</u></b> nie spowodują przejścia do nowej linii, będą wyświetlać się obok siebie, w
+                    jednej linii. Domyślnie, elementom liniowym przeglądarka ustawia właściwość "display" na
+                    "inline". <br>
+                    <b><u>Elementy blokowe</u></b> z kolei będą zachowywać się jak pudełka, które ustawiasz jeden pod
+                    drugim, a więc nigdy nie wyświetlą się obok siebie. Domyślnie, elementom blokowym
+                    przeglądarka ustawia właściwość "display" na "block",<br>
+                    <b><u>Elementy liniowo-blokowe</u></b> z kolei będą zachowywać się jak liniowe, jeśli chodzi o
+                    położenie (a więc wyświetlać będą się obok siebie), natomiast różnią się od nich tym, że
+                    możesz nadać im różne wielkości. Ma to sens, np. < textarea> wyświetla się jako duży
+                    prostokąt i zdecydowanie "wychodzi" poza pojedynczą linijkę tekstu. Domyślnie, elementom
+                    liniowo blokowym przeglądarka ustawia właściwość "display" na "inline-block".<br>
+                        
+                </font>
+            </li>
+        </ol>
+    </body>
+</html>
+<!-- Miłosz Szczechowski -->
